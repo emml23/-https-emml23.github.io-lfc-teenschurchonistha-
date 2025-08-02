@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Who We Are | Living Faith Teens Church</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Quicksand&display=swap');
+
+  /* Background animation */
+  body {
+    margin: 0; padding: 30px 20px;
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(-45deg, #ffe6e6, #ffb3b3, #ff9999, #ffc0cb);
+    background-size: 400% 400%;
+    animation: bgShift 20s ease infinite;
+    color: #660022;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @keyframes bgShift {
+    0% {background-position:0% 50%;}
+    50% {background-position:100% 50%;}
+    100% {background-position:0% 50%;}
+  }
+
+  /* Logo styling */
+  img.logo {
+    width: 12%;
+    max-width: 120px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(204,0,0,0.6);
+    margin-bottom: 25px;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+  }
+  img.logo:hover {
+    transform: scale(1.15) rotate(5deg);
+  }
+
+  /* Animated glowing floating headers */
+  h1, h2 {
+    font-family: 'Baloo 2', cursive;
+    text-align: center;
+    margin: 0 0 25px 0;
+    animation: glowFloat 4s ease-in-out infinite alternate;
+    user-select: none;
+    text-shadow:
+      0 0 10px #ff4d88,
+      0 0 20px #ff1a53,
+      0 0 30px #e60039,
+      0 0 40px #cc0044;
+  }
+  h1 { font-size: 3.2rem; }
+  h2 { font-size: 2.3rem; margin-top: 40px; margin-bottom: 20px; }
+
+  @keyframes glowFloat {
+    0% {
+      transform: translateY(0);
+      text-shadow:
+        0 0 10px #ff4d88,
+        0 0 20px #ff1a53,
+        0 0 30px #e60039,
+        0 0 40px #cc0044;
+    }
+    100% {
+      transform: translateY(-8px);
+      text-shadow:
+        0 0 20px #ff6699,
+        0 0 30px #ff3380,
+        0 0 40px #ff1a66,
+        0 0 50px #cc0044;
+    }
+  }
+
+  /* Clean & modern styling for location & services */
+  .location-services {
+    max-width: 600px;
+    margin: 30px auto 40px;
+    text-align: center;
+    color: #660022;
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  .location-services b {
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+    display: block;
+    border-bottom: 2px solid #cc0044;
+    padding-bottom: 4px;
+  }
+  .location-services p {
+    margin: 6px 0;
+  }
+
+  /* Pillars styling */
+  .pillars p {
+    max-width: 700px;
+    margin: 12px auto;
+    font-size: 1.05rem;
+    line-height: 1.45;
+    color: #770022;
+    max-width: 700px;
+  }
+  .pillars p strong {
+    color: #cc0033;
+    font-weight: 700;
+  }
+
+  /* Text blocks */
+  b.main-bold {
+    display: block;
+    text-align: center;
+    font-size: 1.35rem;
+    margin: 20px auto 15px auto;
+    max-width: 700px;
+    line-height: 1.3;
+    color: #990033;
+    text-shadow: 0 0 5px #cc0044;
+  }
+  p.main-text {
+    max-width: 700px;
+    margin: 12px auto;
+    font-size: 1.15rem;
+    color: #660022;
+    line-height: 1.5;
+  }
+
+  /* Gallery image styling */
+  img.gallery-img {
+    display: block;
+    margin: 40px auto 30px auto;
+    width: 75%;
+    max-width: 750px;
+    border-radius: 14px;
+    box-shadow: 0 0 25px rgba(204,0,0,0.5);
+    cursor: pointer;
+    transition: transform 0.4s ease;
+  }
+  img.gallery-img:hover {
+    transform: scale(1.07) rotate(3deg);
+    box-shadow: 0 0 40px rgba(255,0,102,0.8);
+  }
+
+  /* Navigation */
+  nav {
+    margin-top: 45px;
+    text-align: center;
+  }
+  nav a {
+    text-decoration: none;
+    font-family: 'Baloo 2', cursive;
+    font-weight: 700;
+    color: #cc0033;
+    font-size: 1.3rem;
+    padding: 12px 30px;
+    border: 2px solid #cc0033;
+    border-radius: 40px;
+    transition: all 0.4s ease;
+    display: inline-block;
+    user-select: none;
+  }
+  nav a:hover {
+    background-color: #ff0066;
+    color: white;
+    transform: scale(1.12);
+    box-shadow: 0 0 15px #ff3399;
+  }
+</style>
+</head>
+<body>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">Who We Are</a>
+      <a href="programs.html">Programs</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="profiles.html">Profiles</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <hr>
+
+  <img src="lfc church logo.jpeg" alt="Living Faith Church Logo" class="logo" />
+
+  <h1>Who We Are</h1>
+
+  <b class="main-bold">We are LFC Teens Church, Onitsha</b>
+
+  <section class="location-services">
+    <b>📍 Location: No 61 Limca Road</b>
+    <p><b>Service Times:</b></p>
+    <p>1st Service: 7:00 AM</p>
+    <p>2nd Service: 9:00 AM</p>
+  </section>
+
+  <b class="main-bold">We raise young champions through the Word, worship, wisdom, and works.</b>
+
+  <h2>The 12 Pillars of the Commission</h2>
+
+  <div class="pillars">
+    <p><strong>1. Faith</strong><br>“For whatsoever is born of God overcometh the world…” (1 John 5:4)</p>
+    <p><strong>2. The Word</strong><br>“…upholding all things by the Word of his power…” (Hebrews 1:3; John 1:1 12)</p>
+    <p><strong>3. The Supernatural</strong><br>“The wind bloweth where it listeth… so is everyone that is born of the Spirit.” (Psalm 82; John 3:8)</p>
+    <p><strong>4. The Holy Spirit</strong><br>“His burden shall be taken away … because of the anointing.” (Isaiah 10:27; Acts 1:1 8)</p>
+    <p><strong>5. Prosperity</strong><br>“Beloved, I wish … that thou mayest prosper… even as thy soul prospereth.” (3 John 2; Psalm 35:27; Zech 1:17)</p>
+    <p><strong>6. Prayer</strong><br>“If we ask anything according to his will, he heareth us.” (1 John 5:14)</p>
+    <p><strong>7. Healing</strong><br>“Himself took our infirmities, and bare our sicknesses.” (Matt 8:17; Isaiah 53:3 4; Jer 8:22)</p>
+    <p><strong>8. Wisdom</strong><br>“Wisdom and knowledge shall be the stability of thy times…” (Prov 24:3 4; Isaiah 33:6)</p>
+    <p><strong>9. Success</strong><br>"It’s built on consistent meditation on the Word." (Joshua 1:8 10 guidance)</p>
+    <p><strong>10. Vision</strong><br>“Where there is no vision, the people perish…” (Prov 29:18; Jer 29:11)</p>
+    <p><strong>11. Consecration</strong><br>“Let everyone that nameth the name of Christ depart from iniquity.” (Hebrews 12:14; 2 Tim 2:19)</p>
+    <p><strong>12. Praise</strong><br>“When they began to sing and to praise, the Lord set ambushments…” (2 Chron 20:20 22; Psalm 67; 149)</p>
+  </div>
+
+  <b class="main-bold">More About Living Faith Church</b>
+
+  <p class="main-text">
+    Living Faith Church (LFC), founded by Bishop David Oyedepo in 1983, is one of the largest Pentecostal churches globally, headquartered in Nigeria. The church emphasizes faith, prosperity, healing, and supernatural teachings.
+  </p>
+  <p class="main-text">
+    The LFC Teens Ministry is dedicated to mentoring young people, encouraging strong biblical foundations, spiritual gifts, and community impact. It aims to raise a generation rooted in Christ and equipped to lead in faith and service.
+  </p>
+  <p class="main-text">
+    Through dynamic programs, outreach events, and education, the ministry nurtures youth in character, wisdom, and purpose.
+  </p>
+
+  <img src="galleryx.jpg" alt="Gallery x" class="gallery-img" />
+
+  <nav>
+    <a href="index.html">← Back to Home</a>
+  </nav>
+<div style="margin-top: 40px;">
+  <a href="programs.html" style="
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(to right, #cc0000, #ff0066);
+    color: white;
+    font-family: 'Baloo 2', cursive;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s;
+  ">Next Page →</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Programs | Living Faith Teens Church</title>
+<style>
+  /* Offline font-face definitions */
+  @font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-Regular.woff2') format('woff2'),
+         url('fonts/Poppins-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-Bold.woff2') format('woff2'),
+         url('fonts/Poppins-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-Regular.woff2') format('woff2'),
+         url('fonts/OpenSans-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-Bold.woff2') format('woff2'),
+         url('fonts/OpenSans-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  body {
+    margin: 0; padding: 30px 20px;
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(-45deg, #ffe6e6, #ffb3b3, #ff9999, #ffc0cb);
+    background-size: 400% 400%;
+    animation: bgShift 20s ease infinite;
+    color: #660022;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @keyframes bgShift {
+    0% {background-position:0% 50%;}
+    50% {background-position:100% 50%;}
+    100% {background-position:0% 50%;}
+  }
+
+  /* Interactive church logo */
+  .logo-container {
+    margin-bottom: 30px;
+    cursor: pointer;
+    width: 120px;
+    transition: transform 0.4s ease, filter 0.4s ease;
+  }
+  .logo-container:hover {
+    transform: rotate(12deg) scale(1.1);
+    filter: drop-shadow(0 0 12px #cc0044);
+  }
+
+  h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 25px;
+    text-align: center;
+    animation: glowFloat 4s ease-in-out infinite alternate;
+    user-select: none;
+    text-shadow:
+      0 0 10px #ff4d88,
+      0 0 20px #ff1a53,
+      0 0 30px #e60039,
+      0 0 40px #cc0044;
+  }
+  @keyframes glowFloat {
+    0% {
+      transform: translateY(0);
+      text-shadow:
+        0 0 10px #ff4d88,
+        0 0 20px #ff1a53,
+        0 0 30px #e60039,
+        0 0 40px #cc0044;
+    }
+    100% {
+      transform: translateY(-8px);
+      text-shadow:
+        0 0 20px #ff6699,
+        0 0 30px #ff3380,
+        0 0 40px #ff1a66,
+        0 0 50px #cc0044;
+    }
+  }
+
+  ul {
+    max-width: 700px;
+    background: #fff0f5cc;
+    padding: 35px 45px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(204,0,0,0.25);
+    font-size: 1.25rem;
+    color: #990033;
+    line-height: 1.7;
+    list-style-type: disc;
+    letter-spacing: 0.03em;
+  }
+
+  ul li {
+    margin-bottom: 30px;
+  }
+
+  ul li strong {
+    display: block;
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+    color: #cc0044;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+  }
+
+  nav {
+    margin-top: 50px;
+    text-align: center;
+  }
+  nav a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #cc0033;
+    font-size: 1.35rem;
+    padding: 14px 38px;
+    border: 2px solid #cc0033;
+    border-radius: 45px;
+    transition: all 0.4s ease;
+    display: inline-block;
+    user-select: none;
+  }
+  nav a:hover {
+    background-color: #ff0066;
+    color: white;
+    transform: scale(1.14);
+    box-shadow: 0 0 18px #ff3399;
+  }
+</style>
+</head>
+<body>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">Who We Are</a>
+      <a href="programs.html">Programs</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="profiles.html">Profiles</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <hr>
+
+  <div class="logo-container" title="Living Faith Teens Church">
+    <img src="lfc church logo.jpeg" alt="Living Faith Church Logo" width="120" height="120" />
+  </div>
+
+  <h1>Weekly Programs</h1>
+
+  <ul>
+    <li>
+      <strong>Sunday Services – 7:00 AM & 9:00 AM</strong>
+      Join us every Sunday morning for two inspiring services. The 7:00 AM service kicks off with heartfelt worship, empowering sermons, and prayer, setting a strong spiritual tone for the week. The 9:00 AM service offers an extended session with special teen-focused worship, group discussions, and mentorship, designed to nurture faith and leadership in our youth. Both services welcome everyone to experience renewal and community fellowship.
+    </li>
+    <li>
+      <strong>Wednesday Mid-week Service – 4:30 PM</strong>
+      Our midweek gathering is designed to deepen your spiritual walk through engaging Bible studies and open discussions. This is a great time for teens to connect, ask questions, and grow in understanding. The interactive format encourages participation and practical application in everyday life.
+    </li>
+    <li>
+      <strong>Monday Choir Practice – 5:00 PM</strong>
+      Elevate your worship experience by joining our vibrant choir! Practice is open to teens interested in developing their vocal talents while building close friendships. Music ministry is a key part of our church culture, and we welcome all skill levels to come and be a part of this joyous expression.
+    </li>
+    <li>
+      <strong>Friday Youth Fellowship – 6:00 PM</strong>
+      Friday evenings bring youth together for fellowship, fun activities, games, and Bible-based workshops. This program fosters strong friendships, mentorship opportunities, and encourages teens to lead positive change both inside and outside the church.
+    </li>
+    <li>
+      <strong>Monthly Community Outreach</strong>
+      Every month, our teens actively participate in community service projects such as food drives, neighborhood clean-ups, and visits to orphanages. This initiative helps develop compassion, leadership, and a strong sense of purpose aligned with Christian values.
+    </li>
+  </ul>
+
+  <nav>
+    <a href="index.html">← Back to Home</a>
+  </nav>
+
+
+<div style="margin-top: 40px;">
+  <a href="gallery.html" style="
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(to right, #cc0000, #ff0066);
+    color: white;
+    font-family: 'Baloo 2', cursive;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s;
+  ">Next Page →</a>
+</div>
+
+</body>
+</html>
